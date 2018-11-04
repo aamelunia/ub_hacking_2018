@@ -1,0 +1,28 @@
+{
+  "name": "ubhacking2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=\"gcocr.json\" node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vision": "^0.22.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.3.9",
+    "path": "^0.12.7",
+    "pug": "^2.0.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
+  }
+}

@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  background-color: #e8e8e8;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  /* position: fixed; */
+}
+
+.row {
+  flex: 5;
+}
+
+.nameParagraph {
+  font-family: "Lato", sans-serif;
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
+
+.nameParagraphUnderline {
+  width: 80%;
+}
+
+#canvas {
+  position: relative;
+  width: 750px;
+  height: 600px;
+  margin: auto;
+  margin-top: 2rem;
+  border: 5px solid #235e7a;
+}
+
+#welcomeTitle {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-download {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+/*
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+*/
+
+.customSliderText {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+#url,
+#Title {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.slider {
+  width: 20rem;
+  height: 5rem;
+  margin: auto;
+}
+
+.inputDiv {
+  width: 20rem;
+  height: 5rem;
+  margin: auto;
+  border: 1px solid black;
+  padding: 0.1rem;
+}
+
+.sidenav {
+  flex: 2;
+  height: 57rem;
+  padding-top: 2rem;
+  display: inline-block;
+  background: linear-gradient(
+    to left,
+    #359189,
+    #228589,
+    #187887,
+    #1a6b82,
+    #235e7a
+  );
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.userBar {
+  position: relative;
+  width: 80%;
+  height: 75%;
+  background: white;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 1rem;
+}
+
+#currentUsersTitle {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#userBarHr {
+  margin: 3rem;
+  border: 1px solid white;
+}
+
+#currentUserHr {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  #canvas {
+    width: 500px;
+    height: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    border: 5px solid #235e7a;
+  }
+
+  .sidenav {
+    height: 100%;
+    padding-top: 1rem;
+  }
+
+  #userBarHr {
+    margin: 1rem;
+    border: 1px solid white;
+  }
+
+  #currentUserHr {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid black;
+  }
+}
+
+.messages {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  font-family: "Lato", sans-serif;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 8rem;
+  bottom: 0;
+  padding: 20px;
+  margin-top: 10px;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.message h1 {
+  color: #fff;
+}
+
+.messagingContainer {
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.message_paragraph {
+  background: #f1f0f0;
+  color: black;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-top: 0;
+}
+
+.messageParagraph {
+  background: #3578e5;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  margin-top: 0;
+}
+
+.messageInputDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#userMessage {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  width: 80%;
+  height: 2rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.sendMessageButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  outline: none;
+}
+
+/*
+#toggle {
+  position:absolute;
+  appearance:none;
+  cursor:pointer;
+  left:-100%;
+  top: 100%;
+}
+
+#toggle + label {
+  position:absolute;
+  cursor:pointer;
+  padding:10px;
+  background: #26ae90;
+  width: 100px;
+  border-radius: 3px;
+  padding: 8px 10px;
+  color: #FFF;
+  line-height:20px;
+  font-size:12px;
+  text-align:center;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  margin: 20px 50px;
+  transition:all 500ms ease;
+}
+
+#toggle + label:after {
+  content:"Toggle Messages"
+}
+
+.special {
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  padding: 5em 3em;
+}
+
+#toggle:checked ~ .message {
+  top: 0;
+}
+
+#toggle:checked ~ .container {
+  margin-top: 250px;
+}
+
+#toggle:checked + label {
+  background:#dd6149;
+}
+
+#toggle:checked + label:after {
+  content:"Close"
+}
+*/

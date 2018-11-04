@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+    <script type="text/javascript" src="../notecanvas.js"></script>
+    <link rel="stylesheet" href='../note_canvas.css' />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sidenav">
+            <div class='buttonDiv' id='buttonDiv'>
+                <a href="#" class="button" id="btn-download" download="canvas_file.png">Download Canvas as Image</a>
+            </div>
+            <!-- <div class='userBar'>
+                <h3 id='currentUsersTitle'>Active Users</h3>
+                <hr id='currentUserHr' />
+                <div id='userList'>
+
+                </div>
+            </div> -->
+            <!-- <hr id='userBarHr' /> -->
+            <br />
+
+            <div class='buttonDiv' id='buttonDiv' onclick="getImageText()">
+                <a href="#" class="button" id="btn-download">Convert Canvas To Text</a>
+            </div>
+
+            <hr id='userBarHr' />
+
+            <div class='drawButtonDiv'>
+              <button onclick='erase()' class='eraserButton'>Eraser <i class="fa fa-eraser" aria-hidden="true" id='eraserIcon'></i></button>
+              <button onclick='brush()' class='eraserButton'>Brush <i class="fa fa-pencil" aria-hidden="true" id='eraserIcon'></i></button>
+            </div>
+
+            <hr id='userBarHr' />
+
+            <p class='customSliderText'>Brush Weight</p>
+
+            <div class='inputDiv'>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+
+            <hr id='userBarHr' />
+
+
+            <div class='colorDiv'>
+              <input type="color" name="favcolor" value="#ff0000" id='colorPicker'>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10" id="canvasContainer">
+                <div id="canvas" class="canvas">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<!-- <script>
+  var x = document.getElementById("fail").innerText
+  sendNicknameAndRoom(x);
+</script> -->
+
+</html>

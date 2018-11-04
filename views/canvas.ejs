@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script type="text/javascript" src="../canvas.js"></script>
+  <link rel="stylesheet" href='../app.css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="sidenav">
+      <div class='buttonDiv' id='buttonDiv'>
+        <a href="#" class="button" id="btn-download" download="canvas_file.png">Download Canvas</a>
+      </div>
+
+        <hr id='userBarHr' />
+
+      <div class='userBar'>
+        <h3 id='currentUsersTitle'>Active Users</h3>
+        <hr id='currentUserHr' />
+        <div id='userList'>
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <h1 id = "Title" style="text-align: center">Share this link with your friends</h1>
+      <p id = "url" style = " text-align : center "></p>
+      <div class="col-md-10" id="canvasContainer">
+        <div id="canvas" class="canvas">
+          <p id="fail" style="display:none">
+            <%= nickname %>
+          </p>
+        </div>
+      </div>
+
+      <div class='messagingContainer'>
+        <div class='messageInputDiv'>
+          <input id="userMessage" type="text" name="message" placeholder="Enter Message" />
+          <button onclick='sendMessage()' class='sendMessageButton'>Send</button>
+        </div>
+
+        <div class='messages' id='messages'>
+          <p id='useless'>
+            There are currently no messsages to display
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+<script type="text/javascript">
+  var x = document.getElementById("fail").innerText
+  sendNicknameAndRoom(x);
+
+  var y = document.getElementById('url');
+url.innerText = window.location.href;
+</script>
+
+</html>

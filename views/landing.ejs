@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch It</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/landing.css">
+  <script type="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+<body>
+
+  <!-- <div style="margin-top: 1px">
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">About</a>
+      </div>
+  </div> -->
+
+  <div class="container">
+    <h1>Sketch It</h1>
+
+    <div class="jumbotron" style="margin-top:30px">
+      <p>Connecting the world, one blank canvas at a time.</p>
+      <div class='layoutDiv'>
+        <div class='row' style="border-radius: 10px">
+          <div class='column' style="padding:10px">
+            <p class='buttonDescription'>Invite others and interact with them via realtime
+              canvasing and messaging!</p>
+          </div>
+          <div class='column'>
+            <form action="/urlgenerator" method="post">
+              <button type="submit" class="btn btn-primary btn-lg text-center" id="sessionButton">Start a Live Session</button>
+            </form>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-md-6">
+            <form action="/urlgenerator" method="post">
+              <button type="submit" class="btn btn-primary btn-lg text-center">Start a Live Session</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-lg btn-primary text-center" onclick="takeNotes()">Take Notes</button>
+          </div>
+        </div> -->
+        <div class='row' style="border-radius: 10px">
+          <div class='column' style="padding:10px">
+            <div class='textDiv'>
+              <p class='buttonDescription'>Handwrite your notes on a blank canvas and leverage
+                the
+                Google OCR API to parse your notes into a text file!
+              </p>
+            </div>
+          </div>
+          <div class='column'>
+            <button class="btn btn-lg btn-primary text-center" onclick="takeNotes()" id="notesButton">Take Notes</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>
+
+
+</body>
+
+<script>
+  function takeNotes() {
+    window.location.href = window.location.href + "notes"
+  }
+</script>
+
+</html>
