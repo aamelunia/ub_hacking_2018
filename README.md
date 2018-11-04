@@ -1,6 +1,6 @@
 ## Sketch It (UB Hacking 2018 Project - 3rd place overall winner)
 
-### Connecting the world, one blank canvas at a time. Invite others and interact with them via realtime canvasing and messaging and also handwrite your notes on a blank canvas and leverage the Google OCR API to parse your notes into a text file.
+#### Connecting the world, one blank canvas at a time. Invite others and interact with them via realtime canvasing and messaging and also handwrite your notes on a blank canvas and leverage the Google OCR API to parse your notes into a text file.
 
 Simply run 'npm install' upon cloning. Then run the command 'npm start' to start the server.
 
